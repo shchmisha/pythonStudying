@@ -1,0 +1,39 @@
+example:
+    a man plays tennis every saturday and always invites a friend to come with him
+    sometimes his friend shows up, and sometimes he does not
+    for him, it depends on a variety of factors, such as: weather, temperature, humidity, wind etc.
+    the man starts to keep track whether or not his friend showed up
+    for each day, he took note of the weather features for that day, and noted whether the friend came over to play
+
+this data can be used to predict whether or not he will show up
+    this can be done through a decision tree
+
+tree:
+    nodes:
+        split for a certain value of a certain attribute
+    edges:
+        outcome of a split to next node
+    root:
+        the node that performs the first split
+    leaves:
+        terminal nodes that predict the outcome
+
+entropy and information gain are mathematical methods of choosing the best split
+
+random forests:
+    to improve performance, we can use many trees with a random sample of features chosen as the split
+
+    a new random sample of features is chosen for every single tree at every single split
+
+    for classification, m (random smaple size) is typically chosen to be square root of p (total amount of features)
+
+what is the point of random forests:
+    suppose there is one strong featuer in the dataset
+
+    when using "bagged" trees, most of the trees will use that feature as the top split,
+    resulting in an ensemble of similar trees that ar ehighly correlated
+
+    averaging highly correlated quantitties does not significantly reduce variance
+
+    by randomly leaving out features from each split, Random Forests "decorrelates" the trees, such that
+    the averaging process can reduce the variance of the resulting model

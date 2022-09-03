@@ -1,0 +1,23 @@
+Root:
+top node without parent
+
+Edge:
+a link between parent and child
+
+Leaf:
+a node without children
+
+Sibling:
+a child of same parent
+
+Ancestor:
+a parent, grandparent or great grandparent of a node
+
+Depth of node:
+length of path from root to node
+
+Depth of tree:
+depth of root node
+
+Height of tree:
+height of root node

@@ -1,0 +1,25 @@
+given a set of training examples, each marked to one of two categories, 
+an SVM training algorithm builds a model that assigns new examples into
+one category or the other, making it a non probabilistic binary linear classifier
+
+An SVM model is a representation of the examples as points in space, 
+mapped so that the examples of the separate categories are divided 
+by a clear gap that is as wide as possible
+
+new examples are mapped into the same space and predicted to belong to a category based on which side of the gap they fall on
+
+explanation:
+    imagine training data plotted on a graph
+    there are two classes, red and blue
+    goal is to put a new point of the plot, where the horizintal axis is the feature 1 and vertical axis is the feature 2, and to determine which class does it belong to
+
+    we can draw a separating hyperplane(line in case of two dimensions) between the classes on the plot
+        however, there are ususally lots of options that separate the trianing data perfectly
+
+        we would like to choose a hyperplane that maximises the margin between classes
+
+        the vector points that the margin lines touch are known as Support Vectors
+
+        this can be expanded to non-linearly separable data through a "kernel trick"
+            when the data cannot be separated by a stright line in two dimensions, we can add a thrid dimension (Z) to separate it
+

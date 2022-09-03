@@ -1,0 +1,34 @@
+learn about logistic regression as a method for classification
+
+examples of binary classification problems:
+    spam vs "ham" emails
+    loan default (yes/no)
+    disease diagnosis
+
+logistic regression allows us to solve classification problems, wehere we are trying to predict discrete categories
+
+linear regression cannot be used on binary classification problems
+in order to solve binary classification problems, transform the linear reegression line into a logistic regression curve
+
+the sigmoid function (1/(1+e^(-x))) takes in any value and outputs it to be between 0 and 1
+
+take in linear regression solution (best fitting line) and pass it through the sigmoid function, thereefore transforming it into a logistic model
+
+set a cutoff point (usually 0.5), anything below results in class 0, everything above results in class 1
+
+overview:
+    use logistic function tto outputt a value between 0 and 1. assign a class based off that probability
+
+use a confusion matrix to evaulate classification models
+    a confusion matrix is a table used to describe the performance of a classification model
+    for example, x axis represents the prediction outcome, and the y axis repreesents the actual outcome
+    basic terminology:
+        true positives
+        true negatives
+        false positives
+        false negatives
+    the total number of teests is the sum of all slots in the matrix
+
+    accuracy: (TP+TN)/total
+
+    missclasification: (FP+FN)/total

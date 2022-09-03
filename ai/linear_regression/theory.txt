@@ -1,0 +1,17 @@
+example:
+if a 7ft man has a child, chances are that his son will bee pretty tall. but because the man is such an anomaly, 
+    there is also a very good chance that his son will not be as tall as him
+
+this phenomenon is called regression, as in:
+    "A father's son's height tends tpo regress (or drift towards) a mean (average) height"
+
+the goal of linear regression is to minimalize the vertical distance between all data points and the line
+
+In order to determine thee best line, attempt to minimize thee distance between all the points and their distance to the line
+
+ways to minimize the distance:
+    sum of squared errors
+    sum of absolute errors
+    etc
+
+Least squares method: fitted by minimizing the sum of squares of the residuals (difference in y values between the observation and the line)

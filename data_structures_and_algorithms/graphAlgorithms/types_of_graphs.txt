@@ -1,0 +1,10 @@
+Graph:
+    -Directed
+        -Weighted
+            -positive
+            -negative
+        -Unweighted
+    -Undirected
+        -Weighted
+            -positive
+            -negative

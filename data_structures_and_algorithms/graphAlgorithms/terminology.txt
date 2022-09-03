@@ -1,0 +1,12 @@
+
+Vertices:
+    vertices of the nodes on the graph
+
+Edge:
+    the line that connects pairs of verticies
+
+Unweighted graph:
+    a graph which does not have any weight associated with any edge
+
+Weighted graph:
+    a graph which has a weight associated with any edge
